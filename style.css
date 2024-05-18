@@ -1,0 +1,83 @@
+body{
+  font-family: 'Press Start 2P', cursive;
+  margin: 2em;
+  background-color: #000;
+  color: #fff;
+}
+
+h1{
+  font-family: 'Press Start 2P', cursive;
+}
+
+button{
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+}
+
+#gameButtonArea > button{
+  height: 200px;
+  width: 200px;
+  margin: 2px;
+}
+
+.hidden{
+  display: none;
+}
+
+#button1{
+  background: #00ff00; 
+}
+
+#button1:active,#button1.lit{
+  background: #00cc00;
+}
+
+#button2{
+  background: #87ceeb;
+}
+
+#button2:active,#button2.lit{
+  background: #4682b4; 
+}
+
+#button3{
+  background: #ff69b4;
+}
+
+#button3:active, #button3.lit{
+  background: #ff1493;
+}
+
+#button4{
+  background: #ffff00;
+}
+
+#button4:active, #button4.lit {
+  background: #ffd700;
+}
+
+#loseVideo{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+}
+#winVideo{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+}
+#name {
+  text-align: center;
+}

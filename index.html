@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Finalist Task</title>
+  <!-- Links our CSS code to our HTML code -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+</head>
+
+<body>
+  <h2 id="name">I SAY, U SAY</h2>
+  <h1>Light and Sound Game</h1>
+  <p>Think fast... The goal is to repeat the random pattern of signals I generate!</p>
+  <button id="startBtn" onclick="startGame()">Start</button>
+  <button class="hidden" id="stopBtn" onclick="stopGame()">Stop</button>
+
+  <div id="gameButtonArea">
+    <!--Game Buttons-->
+    <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"></button>
+    <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
+    <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"></button>
+    <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"></button>
+  </div>
+  <video id="loseVideo" src="video/youLose.mp4" class="hidden" controls></video>
+  <div id="winVideo" class="hidden"></div>
+
+  <!-- Links our JavaScript code to our HTML code -->
+  <script src="script.js"></script>
+</script>
+</body>
+
+</html>
